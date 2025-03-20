@@ -1,0 +1,51 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: hwb(0 7% 15%);
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  transition: width 0.3s ease;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.stats div {
+  flex: 1;
+  padding: 5px;
+}
+
+.stats strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  color: #140b0b;
+}
+
+.stats div br + * {
+  color: #130303;
+  font-size: 14px;
+}
+.profile-section1 img {
+  width: 40px;         /* Size of the DP */
+  height: 40px;
+  border-radius: 50%;  /* Makes the image circular */
+  object-fit: cover;   /* Ensures image fills the circle properly */
+  margin: 10px auto;   /* Centers image horizontally */
+  display: block;
+  border: 2px solid #fff; /* Optional: white border for a nice effect */
+}
