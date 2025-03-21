@@ -11,7 +11,13 @@ const Dashboard = () => {
       <Sidebar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
       <div className={`main-content ${isExpanded ? "expanded" : "collapsed"}`}>
         <h1>Welcome to the Dashboard</h1>
-        {/* Your Routes or Page Content here */}
+        {/* Add your routes or page content here */}
+        <Routes>
+          {/* Example Route */}
+          <Route path="/" element={<h2>Home Content</h2>} />
+          <Route path="/profile" element={<h2>Profile Content</h2>} />
+          {/* Add more routes here */}
+        </Routes>
       </div>
     </div>
   );
